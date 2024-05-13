@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.svg";
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "../../ui/container";
 
 function Navbar() {
@@ -64,7 +65,9 @@ function Navbar() {
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn  text-lg'>Login</a>
+          <Link to='/login'>
+            <a className='btn  text-lg'>Login</a>
+          </Link>
         </div>
       </div>
     </Container>

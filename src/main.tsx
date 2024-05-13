@@ -1,15 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-import MainLayout from "./layout/MainLayout.js";
+import { router } from "./routes";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <div data-theme='light'>
-      <MainLayout>
-        <App />
-      </MainLayout>
+      <RouterProvider router={router} />
     </div>
   </React.StrictMode>
 );

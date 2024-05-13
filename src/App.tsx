@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home/page";
+import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <>
+      <MainLayout>
+        <Home />
+      </MainLayout>
+    </>
   );
 };
 

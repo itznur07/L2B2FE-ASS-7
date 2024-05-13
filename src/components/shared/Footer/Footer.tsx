@@ -5,7 +5,8 @@ import Container from "../../ui/container";
 function Footer() {
   return (
     <Container>
-      <footer className='footer p-10 bg-base-200 text-base-content'>
+      <hr />
+      <footer className='footer p-10  text-base-content'>
         <aside>
           <span>
             <img src={logo} alt='logo' />
