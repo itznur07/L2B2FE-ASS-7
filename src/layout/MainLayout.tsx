@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/shared/Footer/Footer";
+import Navbar from "@/components/shared/Navbar/Navbar";
 import React from "react";
 
 interface MainLayoutProps {
