@@ -1,9 +1,13 @@
 import React from "react";
 import "./App.css";
-import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home/page";
 
-function App() {
-  return <MainLayout></MainLayout>;
-}
+const App = () => {
+  return (
+    <div>
+      <Home />
+    </div>
+  );
+};
 
 export default App;

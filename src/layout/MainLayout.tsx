@@ -1,14 +1,17 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
-import { Outlet } from "react-router-dom";
 
-const MainLayout = () => {
+interface MainLayoutProps {
+  children: React.ReactNode;
+}
+
+const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <Navbar></Navbar>
+      {children}
+      <Footer></Footer>
     </div>
   );
 };
