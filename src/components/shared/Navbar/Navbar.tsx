@@ -44,9 +44,13 @@ function Navbar() {
             </ul>
           </div>
           <span>
-            <img src={logo} alt='logo' />
+            <Link to='/'>
+              <img src={logo} alt='logo' />
+            </Link>
           </span>
-          <a className=' text-xl font-bold ml-1'>Aidnest</a>
+          <Link>
+            <a className=' text-xl font-bold ml-1'>Aidnest</a>
+          </Link>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1 text-lg'>

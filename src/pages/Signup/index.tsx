@@ -54,7 +54,10 @@ const Signup = () => {
               </div>
               <div className='mt-2'>
                 <span>
-                  already singup? <Link to='/login'>Login</Link>
+                  already singup?{" "}
+                  <Link to='/login'>
+                    <span className='font-semibold text-[#00B2FF]'>Login</span>
+                  </Link>
                 </span>
               </div>
             </form>
