@@ -8,6 +8,12 @@ import Container from "../../ui/container";
 function Navbar() {
   const token = useGetToken();
 
+  /** Handle Logout */
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  };
+
   return (
     <Container>
       <div className='navbar bg-base-100'>
@@ -104,7 +110,7 @@ function Navbar() {
                   <a>Dashboard</a>
                 </li>
                 <hr />
-                <li>
+                <li onClick={handleLogOut}>
                   <a>Logout</a>
                 </li>
               </ul>

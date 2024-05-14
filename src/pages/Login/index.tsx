@@ -14,6 +14,10 @@ const Login = () => {
 
   const [login, { data, isSuccess }] = useLoginMutation();
 
+  if (isSuccess) {
+    window.location.href = "/";
+  }
+
   /** Save token using localStorage api */
   useEffect(() => {
     setTokenLocalStorage(data?.token);
