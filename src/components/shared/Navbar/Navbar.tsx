@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.svg";
 import useGetToken from "@/hooks/useGetToken";
+import { SunMoon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../../ui/container";
@@ -72,8 +73,42 @@ function Navbar() {
           </ul>
         </div>
         <div className='navbar-end'>
+          <div>
+            <div className='dropdown'>
+              <div tabIndex={0} role='button' className='btn m-1'>
+                <SunMoon />
+              </div>
+              <ul
+                tabIndex={0}
+                className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-24'
+              >
+                <li>
+                  <a>Light</a>
+                </li>
+                <li>
+                  <a>Dark</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           {token?.length > 0 ? (
-            <h1>Dashboard</h1>
+            <div className='dropdown'>
+              <div tabIndex={0} role='button' className='btn m-1'>
+                Profile
+              </div>
+              <ul
+                tabIndex={0}
+                className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44'
+              >
+                <li>
+                  <a>Dashboard</a>
+                </li>
+                <hr />
+                <li>
+                  <a>Logout</a>
+                </li>
+              </ul>
+            </div>
           ) : (
             <Link to='/login'>
               <a className='btn  text-lg'>Login</a>
