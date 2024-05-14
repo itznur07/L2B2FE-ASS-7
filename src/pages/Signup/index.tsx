@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.svg";
+import { useSignupMutation } from "@/redux/fetures/auth/authAPI";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -11,8 +12,11 @@ const Signup = () => {
     reset,
   } = useForm();
 
+  const [signup, { isSuccess }] = useSignupMutation();
+
   const handleSubmitForm = (data: any) => {
     console.log(data);
+    signup(data);
     reset();
   };
 
