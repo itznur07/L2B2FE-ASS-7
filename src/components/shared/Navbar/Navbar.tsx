@@ -1,9 +1,12 @@
 import logo from "@/assets/logo.svg";
+import useGetToken from "@/hooks/useGetToken";
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../../ui/container";
 
 function Navbar() {
+  const token = useGetToken();
+
   return (
     <Container>
       <div className='navbar bg-base-100'>
@@ -69,9 +72,13 @@ function Navbar() {
           </ul>
         </div>
         <div className='navbar-end'>
-          <Link to='/login'>
-            <a className='btn  text-lg'>Login</a>
-          </Link>
+          {token?.length > 0 ? (
+            <h1>Dashboard</h1>
+          ) : (
+            <Link to='/login'>
+              <a className='btn  text-lg'>Login</a>
+            </Link>
+          )}
         </div>
       </div>
     </Container>

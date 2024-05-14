@@ -14,15 +14,10 @@ const Login = () => {
 
   const [login, { data, isSuccess }] = useLoginMutation();
 
-  if (isSuccess) {
-    alert("Login successful");
-    console.log(data);
-  }
-
   /** Save token using localStorage api */
   useEffect(() => {
     setTokenLocalStorage(data?.token);
-  }, [isSuccess, data?.token]);
+  }, [data?.token]);
 
   const setTokenLocalStorage = (token: string) => {
     localStorage.setItem("token", token);

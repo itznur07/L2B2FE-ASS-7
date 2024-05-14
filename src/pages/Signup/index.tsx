@@ -12,7 +12,7 @@ const Signup = () => {
     reset,
   } = useForm();
 
-  const [signup, { isSuccess }] = useSignupMutation();
+  const [signup] = useSignupMutation();
 
   const handleSubmitForm = (data: any) => {
     console.log(data);
