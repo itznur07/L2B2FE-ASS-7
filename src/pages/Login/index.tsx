@@ -24,6 +24,9 @@ const Login = () => {
             <div className='flex flex-col items-center justify-center p-3 cursor-pointer'>
               <img className='w-[30px]' src={logo} alt='logo' />
               <span className='text-xs font-medium uppercase'>Aidnest</span>
+              <h1 className='text-lg font-medium text-slate-500 '>
+                Login or create an account
+              </h1>
             </div>
             <hr />
             <form
