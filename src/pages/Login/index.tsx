@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.svg";
+import { useLoginMutation } from "@/redux/fetures/auth/authAPI";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -11,8 +12,16 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
+  const [login, { data, isSuccess }] = useLoginMutation();
+
+  if (isSuccess) {
+    alert("Login successful");
+    console.log(data);
+  }
+
   const handleSubmitForm = (data: any) => {
     console.log(data);
+    login(data);
     reset();
   };
 
