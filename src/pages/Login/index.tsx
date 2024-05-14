@@ -1,6 +1,6 @@
 import logo from "@/assets/logo.svg";
 import { useLoginMutation } from "@/redux/fetures/auth/authAPI";
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
@@ -18,6 +18,15 @@ const Login = () => {
     alert("Login successful");
     console.log(data);
   }
+
+  /** Save token using localStorage api */
+  useEffect(() => {
+    setTokenLocalStorage(data?.token);
+  }, [isSuccess, data?.token]);
+
+  const setTokenLocalStorage = (token: string) => {
+    localStorage.setItem("token", token);
+  };
 
   const handleSubmitForm = (data: any) => {
     console.log(data);
