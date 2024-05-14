@@ -97,7 +97,7 @@ function Navbar() {
               </ul>
             </div>
           </div>
-          {token?.length > 0 ? (
+          {token?.length > 0 && token === String ? (
             <div className='dropdown'>
               <div tabIndex={0} role='button' className='btn m-1'>
                 Profile

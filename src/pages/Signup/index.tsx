@@ -12,7 +12,11 @@ const Signup = () => {
     reset,
   } = useForm();
 
-  const [signup] = useSignupMutation();
+  const [signup, { isSuccess }] = useSignupMutation();
+
+  if (isSuccess) {
+    window.location.href = "/login";
+  }
 
   const handleSubmitForm = (data: any) => {
     console.log(data);
