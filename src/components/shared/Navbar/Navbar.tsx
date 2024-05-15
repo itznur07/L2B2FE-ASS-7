@@ -1,7 +1,7 @@
 import logo from "@/assets/logo.svg";
 import useGetToken from "@/hooks/useGetToken";
 import { changeMode } from "@/redux/fetures/mode/modeSlice";
-import { SunMoon } from "lucide-react";
+import { LogOutIcon, SunMoon } from "lucide-react";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -122,7 +122,9 @@ function Navbar() {
                 </li>
                 <hr />
                 <li onClick={handleLogOut}>
-                  <a>Logout</a>
+                  <a className='text-red-500'>
+                    <LogOutIcon size={20} /> Logout
+                  </a>
                 </li>
               </ul>
             </div>
