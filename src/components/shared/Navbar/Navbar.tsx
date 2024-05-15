@@ -108,7 +108,7 @@ function Navbar() {
               </ul>
             </div>
           </div>
-          {token?.length > 0 && token === String ? (
+          {token?.length > 0 && token !== undefined ? (
             <div className='dropdown'>
               <div tabIndex={0} role='button' className='btn m-1'>
                 Profile
@@ -118,7 +118,7 @@ function Navbar() {
                 className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44'
               >
                 <li>
-                  <a>Dashboard</a>
+                  <Link to='/dashboard'>Dashboard</Link>
                 </li>
                 <hr />
                 <li onClick={handleLogOut}>

@@ -1,4 +1,6 @@
 import App from "@/App";
+import AdminLayout from "@/layout/AdminLayout";
+import AllDonator from "@/pages/AllDonator";
 import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
@@ -22,6 +24,16 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <Signup />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "/dashboard/all-donators",
+        element: <AllDonator />,
       },
     ],
   },
