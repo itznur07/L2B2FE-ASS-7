@@ -8,10 +8,8 @@ import { router } from "./routes";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div data-theme='light'>
-      <Provider store={store}>
-        <RouterProvider router={router} />
-      </Provider>
-    </div>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

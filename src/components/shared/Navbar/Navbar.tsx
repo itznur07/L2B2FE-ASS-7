@@ -1,12 +1,20 @@
 import logo from "@/assets/logo.svg";
 import useGetToken from "@/hooks/useGetToken";
+import { changeMode } from "@/redux/fetures/mode/modeSlice";
 import { SunMoon } from "lucide-react";
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Container from "../../ui/container";
 
 function Navbar() {
   const token = useGetToken();
+
+  const disptach = useDispatch();
+
+  const handleChangeMode = (modeValue: string) => {
+    disptach(changeMode(modeValue));
+  };
 
   /** Handle Logout */
   const handleLogOut = () => {
@@ -88,10 +96,10 @@ function Navbar() {
                 tabIndex={0}
                 className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-24'
               >
-                <li>
+                <li onClick={() => handleChangeMode("light")}>
                   <a>Light</a>
                 </li>
-                <li>
+                <li onClick={() => handleChangeMode("dark")}>
                   <a>Dark</a>
                 </li>
               </ul>
