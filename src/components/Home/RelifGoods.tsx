@@ -1,5 +1,6 @@
 import { useGetReliefGoodsQuery } from "@/redux/fetures/Home/homeApi";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RelifGoods = () => {
   const { data, isLoading, isSuccess } = useGetReliefGoodsQuery();
@@ -11,9 +12,19 @@ const RelifGoods = () => {
   }
 
   return (
-    <div className='mt-[56px]'>
+    <div className='mt-[86px]'>
       {/* section title */}
-      <h1 className='text-3xl font-semibold'>Emergency Relief Supplies</h1>
+      <div className='flex items-center justify-between'>
+        <h1 className='text-3xl font-semibold'>Emergency Relief Supplies</h1>
+        <Link to='/relief-goods'>
+          <span
+            className='text-lg text-[#00B2FF] font-semibold uppercase
+        '
+          >
+            View All
+          </span>
+        </Link>
+      </div>
 
       {/* Card Section */}
       <div className='grid md:grid-cols-3 grid-cols-2 justify-center items-center gap-5 mt-[24px]'>

@@ -1,6 +1,6 @@
 import App from "@/App";
 import AdminLayout from "@/layout/AdminLayout";
-import AllDonator from "@/pages/AllDonator";
+import { default as AllDonator, default as AllRelief } from "@/pages/AllRelief";
 import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
@@ -24,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <Signup />,
+      },
+      {
+        path: "relief-goods",
+        element: <AllRelief />,
       },
     ],
   },
