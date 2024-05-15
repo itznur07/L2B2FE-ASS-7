@@ -102,6 +102,9 @@ function Navbar() {
                 <li onClick={() => handleChangeMode("dark")}>
                   <a>Dark</a>
                 </li>
+                <li onClick={() => handleChangeMode("cupcake")}>
+                  <a>Cupcake</a>
+                </li>
               </ul>
             </div>
           </div>
