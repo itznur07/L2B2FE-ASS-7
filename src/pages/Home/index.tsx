@@ -1,3 +1,4 @@
+import MiniBanner from "@/components/Home/MiniBanner";
 import RelifGoods from "@/components/Home/RelifGoods";
 import Banner from "@/components/shared/Banner/Banner";
 import Container from "@/components/ui/container";
@@ -7,6 +8,7 @@ const Home = () => {
   return (
     <Container>
       <Banner />
+      <MiniBanner />
       <RelifGoods />
     </Container>
   );
