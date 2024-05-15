@@ -29,7 +29,6 @@ const RelifGoods = () => {
               </h2>
               <p>{item.description}</p>
               <div className='card-actions justify-end'>
-                {/* You can open the modal using document.getElementById('ID').showModal() method */}
                 <button
                   className='btn'
                   onClick={() =>
@@ -46,8 +45,16 @@ const RelifGoods = () => {
                         ✕
                       </button>
                     </form>
+                    <h1 className='font-bold text-lg mb-3'>Relief Details</h1>
+
+                    <img
+                      src={
+                        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D"
+                      }
+                      alt='image'
+                      className='my-2'
+                    />
                     <h3 className='font-bold text-lg'>{item.title}</h3>
-                    <img src={item.image} alt='image' />
                     <div className='badge badge-secondary'>{item.category}</div>
                     <p className='py-4'>{item?.description}</p>
                   </div>
