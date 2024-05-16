@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 const RelifGoods = () => {
   const { data, isLoading, isSuccess } = useGetReliefGoodsQuery();
 
-  console.log(data);
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -15,7 +13,7 @@ const RelifGoods = () => {
     <div className='mt-[86px]'>
       {/* section title */}
       <div className='flex items-center justify-between'>
-        <h1 className='text-3xl font-semibold'>Emergency Relief Supplies</h1>
+        <h1 className='text-3xl font-bold   '>Emergency Relief Supplies</h1>
         <Link to='/relief-goods'>
           <span
             className='text-lg text-[#00B2FF] font-semibold uppercase
