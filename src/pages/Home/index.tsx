@@ -1,3 +1,4 @@
+import ReliefGallery from "@/components/Home/Gallery";
 import MiniBanner from "@/components/Home/MiniBanner";
 import RelifGoods from "@/components/Home/RelifGoods";
 import Testimonials from "@/components/Home/Testimonial";
@@ -12,6 +13,7 @@ const Home = () => {
       <MiniBanner />
       <RelifGoods />
       <Testimonials />
+      <ReliefGallery />
     </Container>
   );
 };

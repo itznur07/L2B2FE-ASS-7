@@ -1,8 +1,9 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/swiper-bundle.min.css";
-// import "swiper/swiper.min.css";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Sample testimonial data
 const testimonials = [
@@ -58,19 +59,19 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className='mt-[86px] mb-3'>
+    <div className='mt-[120px] '>
       <h2 className='text-3xl font-bold  mb-8 '>Testimonials</h2>
       <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={3}
         loop={true}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
-        navigation={true}
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className='flex flex-col items-center bg-white  p-6   border rounded-lg'>
+            <div className='flex flex-col items-center bg-white  p-6   border rounded-lg pb-10'>
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
