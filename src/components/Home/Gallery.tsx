@@ -56,7 +56,7 @@ const ReliefGallery = () => {
               <img
                 src={image.url}
                 alt={image.alt}
-                className='w-[600] h-[500px] mb-4 rounded-lg'
+                className='w-[500] h-[450px] mb-4 rounded-lg'
               />
               <p className='text-gray-600 text-center'>{image.caption}</p>
             </div>
