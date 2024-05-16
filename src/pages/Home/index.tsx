@@ -1,5 +1,6 @@
 import About from "@/components/Home/About";
 import ReliefGallery from "@/components/Home/Gallery";
+import JoinWithUs from "@/components/Home/JoinWithUs";
 import MiniBanner from "@/components/Home/MiniBanner";
 import RelifGoods from "@/components/Home/RelifGoods";
 import Testimonials from "@/components/Home/Testimonial";
@@ -18,6 +19,7 @@ const Home = () => {
       <ReliefGallery />
       <About />
       <WeServe />
+      <JoinWithUs />
     </Container>
   );
 };
