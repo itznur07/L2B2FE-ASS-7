@@ -8,9 +8,7 @@ const AdminLayout = () => {
     <div data-theme='light'>
       <Container>
         <div className='flex gap-2'>
-          <div>
-            <Sidebar />
-          </div>
+          <Sidebar />
           <Outlet></Outlet>
         </div>
       </Container>
