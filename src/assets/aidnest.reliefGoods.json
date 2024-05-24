@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc20"
+  },
+  "image": "https://example.com/images/hygiene_kit_1.jpg",
+  "title": "Personal Hygiene Kit",
+  "description": "A kit containing personal hygiene items for maintaining cleanliness and sanitation. Includes soap, toothpaste, and towels.",
+  "category": "Hygiene Kits",
+  "amount": "600 kits"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc19"
+  },
+  "image": "https://images.unsplash.com/photo-1457545195570-67f207084966?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2ludGVyJTIwQ2xvdGhpbmd8ZW58MHx8MHx8fDA%3D",
+  "title": "Winter Clothing",
+  "description": "Warm clothing suitable for cold weather conditions. Includes jackets, sweaters, gloves, and hats.",
+  "category": "Clothing",
+  "amount": "300 sets"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc17"
+  },
+  "image": "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RW1lcmdlbmN5JTIwRm9vZCUyMFBhY2t8ZW58MHx8MHx8fDA%3D",
+  "title": "Emergency Food Pack",
+  "description": "A pack containing essential food items for emergency situations. Includes non-perishable items such as canned goods, grains, and snacks.",
+  "category": "Food Supplies",
+  "amount": "500 packs"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1b"
+  },
+  "image": "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE1lZGljYWwlMjBBaWQlMjBLaXR8ZW58MHx8MHx8fDA%3D",
+  "title": "Medical Aid Kit",
+  "description": "A comprehensive kit containing essential medical supplies for first aid and basic medical care.",
+  "category": "Medical Supplies",
+  "amount": "150 kits"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc24"
+  },
+  "image": "https://example.com/images/clothing_3.jpg",
+  "title": "Adult Clothing",
+  "description": "Clothing for adult men and women. Includes shirts, pants, and jackets suitable for various weather conditions.",
+  "category": "Clothing",
+  "amount": "300 sets"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc21"
+  },
+  "image": "https://example.com/images/water_purification_1.jpg",
+  "title": "Water Purification Tablets",
+  "description": "Tablets used for purifying water and making it safe for drinking. Effective against bacteria and other contaminants.",
+  "category": "Water Purification",
+  "amount": "5,000 tablets"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc23"
+  },
+  "image": "https://example.com/images/food_supplies_4.jpg",
+  "title": "Infant Formula",
+  "description": "Specialized formula for feeding infants in emergency situations. Provides essential nutrients for healthy growth.",
+  "category": "Food Supplies",
+  "amount": "400 cans"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1d"
+  },
+  "image": "https://images.unsplash.com/photo-1576192350050-d9e08ee1f122?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "title": "Canned Food Supply",
+  "description": "A supply of canned food items with a long shelf life. Includes vegetables, meats, and soups.",
+  "category": "Food Supplies",
+  "amount": "1,000 cans"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1e"
+  },
+  "image": "https://example.com/images/clothing_2.jpg",
+  "title": "Children's Clothing",
+  "description": "Clothing specially designed for children of various ages. Includes shirts, pants, and shoes.",
+  "category": "Clothing",
+  "amount": "500 sets"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc18"
+  },
+  "image": "https://images.unsplash.com/photo-1624638760852-8ede1666ab07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "title": "Basic Shelter Kit",
+  "description": "A kit providing basic materials for setting up temporary shelters. Includes tarpaulins, ropes, and stakes.",
+  "category": "Shelter Kits",
+  "amount": "200 kits"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1f"
+  },
+  "image": "https://example.com/images/medical_supplies_2.jpg",
+  "title": "First Aid Supplies",
+  "description": "Basic first aid supplies for treating minor injuries and wounds. Includes bandages, antiseptics, and scissors.",
+  "category": "Medical Supplies",
+  "amount": "200 kits"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc22"
+  },
+  "image": "https://example.com/images/shelter_kit_3.jpg",
+  "title": "Emergency Shelter Tarp",
+  "description": "A large tarpaulin used for emergency shelter construction. Provides protection from rain and wind.",
+  "category": "Shelter Kits",
+  "amount": "250 tarps"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc25"
+  },
+  "image": "https://example.com/images/medical_supplies_3.jpg",
+  "title": "Emergency Medical Kit",
+  "description": "A comprehensive medical kit designed for emergency medical response. Includes supplies for treating injuries and illnesses.",
+  "category": "Medical Supplies",
+  "amount": "100 kits"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1c"
+  },
+  "image": "https://images.unsplash.com/photo-1496165493909-5494251d69f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U2hlbHRlciUyMFRlbnR8ZW58MHx8MHx8fDA%3D",
+  "title": "Family Shelter Tent",
+  "description": "A large tent suitable for accommodating a family. Provides shelter from the elements during emergencies.",
+  "category": "Shelter Kits",
+  "amount": "100 tents"
+},
+{
+  "_id": {
+    "$oid": "66444ee083db48937a12cc1a"
+  },
+  "image": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fERyaWVkJTIwRm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+  "title": "Dried Food Packages",
+  "description": "Packages of dried and preserved food items with a long shelf life. Includes rice, beans, and dried fruits.",
+  "category": "Food Supplies",
+  "amount": "$5,000 worth"
+}]
