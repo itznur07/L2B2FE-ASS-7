@@ -18,8 +18,8 @@ const AllRelief = () => {
 
         {/* Card Section */}
         <div className='grid md:grid-cols-3 grid-cols-2 justify-center items-center gap-5 mt-[24px]'>
-          {data?.length > 0 ? (
-            data?.data.map((item: any) => (
+          {data?.data?.length > 0 ? (
+            data?.data?.map((item: any) => (
               <div className='card w-96 bg-base-100 shadow-xl'>
                 <figure>
                   <img src={item.image} alt='Shoes' />
