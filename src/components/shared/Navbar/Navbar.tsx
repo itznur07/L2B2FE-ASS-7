@@ -66,7 +66,7 @@ function Navbar() {
               <img src={logo} alt='logo' />
             </Link>
           </span>
-          <Link>
+          <Link to='/'>
             <a className=' text-xl font-bold ml-1'>Aidnest</a>
           </Link>
         </div>
@@ -108,7 +108,7 @@ function Navbar() {
               </ul>
             </div>
           </div>
-          {token?.length > 0 && token !== undefined ? (
+          {(token?.length as any) > 0 && token !== undefined ? (
             <div className='dropdown'>
               <div tabIndex={0} role='button' className='btn m-1'>
                 Profile

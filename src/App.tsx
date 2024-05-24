@@ -4,15 +4,18 @@ import "./App.css";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 
-interface ModeState {
-  mode: "light" | "dark";
+interface RootState {
+  mode: {
+    mode: "light" | "dark";
+  };
 }
-const App: React.FC<{}> = () => {
-  const mode = useSelector((state: ModeState) => state.mode);
+
+const App: React.FC = () => {
+  const mode = useSelector((state: RootState) => state.mode.mode);
 
   return (
     <>
-      <div data-theme={mode.mode}>
+      <div data-theme={mode}>
         <MainLayout>
           <Home />
         </MainLayout>
