@@ -1,6 +1,6 @@
 import React from "react";
 
-const Container = ({ children }) => {
+const Container = ({ children }: { children: React.ReactNode }) => {
   return <div className='max-w-[1240px] mx-auto'>{children}</div>;
 };
 

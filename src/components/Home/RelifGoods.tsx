@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const RelifGoods = () => {
-  const { data, isLoading, isSuccess } = useGetReliefGoodsQuery();
+  const { data, isLoading, isSuccess } = useGetReliefGoodsQuery({});
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -26,7 +26,7 @@ const RelifGoods = () => {
 
       {/* Card Section */}
       <div className='grid md:grid-cols-3 grid-cols-2 justify-center items-center gap-5 mt-[24px]'>
-        {data?.data?.slice(0, 6).map((item) => (
+        {data?.data?.slice(0, 6).map((item: any) => (
           <div className='card w-96 bg-base-100 shadow-xl'>
             <figure>
               <img src={item.image} alt='Shoes' />
@@ -41,7 +41,10 @@ const RelifGoods = () => {
                 <button
                   className='btn'
                   onClick={() =>
-                    document.getElementById("my_modal_3").showModal()
+                    document.getElementById("my_modal_3") &&
+                    (
+                      document.getElementById("my_modal_3") as HTMLDialogElement
+                    ).showModal()
                   }
                 >
                   View Details

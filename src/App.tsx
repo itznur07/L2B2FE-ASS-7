@@ -4,8 +4,11 @@ import "./App.css";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 
-const App = () => {
-  const mode = useSelector((state) => state.mode);
+interface ModeState {
+  mode: "light" | "dark";
+}
+const App: React.FC<{}> = () => {
+  const mode = useSelector((state: ModeState) => state.mode);
 
   return (
     <>
