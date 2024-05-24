@@ -51,7 +51,7 @@ function Navbar() {
                 <Link to='/about'>About</Link>
               </li>
               <li>
-                <a>Leaderboard</a>
+                <Link to='/leaderboard'>Leaderboard</Link>
               </li>
               <li>
                 <a>Community</a>
@@ -76,7 +76,7 @@ function Navbar() {
               <Link to='/about'>About</Link>
             </li>
             <li>
-              <a>Leaderboard</a>
+              <Link to='/leaderboard'>Leaderboard</Link>
             </li>
             <li>
               <a>Community</a>

@@ -3,6 +3,7 @@ import AdminLayout from "@/layout/AdminLayout";
 import AboutUs from "@/pages/About";
 import { default as AllDonator, default as AllRelief } from "@/pages/AllRelief";
 import Home from "@/pages/Home";
+import Leaderboard from "@/pages/Leaderboard";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
 import React from "react";
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs />,
+      },
+      {
+        path: "/leaderboard",
+        element: <Leaderboard />,
       },
     ],
   },
