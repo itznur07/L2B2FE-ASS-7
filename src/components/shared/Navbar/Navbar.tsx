@@ -57,7 +57,7 @@ function Navbar() {
                 <a>Community</a>
               </li>
               <li>
-                <a>Volunteers</a>
+                <Link to='/volunteer'>Volunteers</Link>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ function Navbar() {
               <a>Community</a>
             </li>
             <li>
-              <a>Volunteers</a>
+              <Link to='/volunteer'>Volunteers</Link>
             </li>
           </ul>
         </div>
