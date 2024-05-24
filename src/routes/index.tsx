@@ -2,6 +2,7 @@ import App from "@/App";
 import AdminLayout from "@/layout/AdminLayout";
 import AboutUs from "@/pages/About";
 import { default as AllDonator, default as AllRelief } from "@/pages/AllRelief";
+import Community from "@/pages/Community";
 import Home from "@/pages/Home";
 import Leaderboard from "@/pages/Leaderboard";
 import Login from "@/pages/Login";
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: "/volunteer",
         element: <Volunteer />,
+      },
+      {
+        path: "/community",
+        element: <Community />,
       },
     ],
   },

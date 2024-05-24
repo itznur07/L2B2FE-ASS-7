@@ -1,3 +1,4 @@
+import About from "@/components/Home/About";
 import React from "react";
 
 const opportunities = [
@@ -98,6 +99,7 @@ const Volunteer = () => {
           </div>
         </div>
       </div>
+      <About />
     </div>
   );
 };
