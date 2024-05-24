@@ -48,6 +48,9 @@ function Navbar() {
               className='menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-base-100 rounded-box w-52 text-lg'
             >
               <li>
+                <Link to='/relief-goods'>Relief Goods</Link>
+              </li>
+              <li>
                 <Link to='/about'>About</Link>
               </li>
               <li>
@@ -72,6 +75,9 @@ function Navbar() {
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1 text-lg'>
+            <li>
+              <Link to='/relief-goods'>Relief Goods</Link>
+            </li>
             <li>
               <Link to='/about'>About</Link>
             </li>
